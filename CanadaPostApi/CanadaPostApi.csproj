@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Description>Afterpay CanadaPostApi C#</Description>
+    <Version>2.1.6.0</Version>
+    <PackageProjectUrl>https://github.com/users/SelectSystemsInternational/projects/19</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SelectSystemsInternational/Afterpay-CanadaPostApi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ModelOld\**" />
+    <EmbeddedResource Remove="ModelOld\**" />
+    <None Remove="ModelOld\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Api\ChargesApi.cs" />
+    <Compile Remove="Api\CustomersApi.cs" />
+    <Compile Remove="Api\PaymentsApi.cs" />
+    <Compile Remove="Api\RefundsApi.cs" />
+    <Compile Remove="Api\SettlementsApi.cs" />
+    <Compile Remove="Api\TokensApi.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>

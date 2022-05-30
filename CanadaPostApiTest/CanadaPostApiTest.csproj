@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <Version>2.1.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ModelOld\**" />
+    <EmbeddedResource Remove="ModelOld\**" />
+    <None Remove="ModelOld\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Api\ChargesApiTests.cs" />
+    <Compile Remove="Api\CustomersApiTests.cs" />
+    <Compile Remove="Api\OrdersApiTests.cs" />
+    <Compile Remove="Api\PaymentsApiTests.cs" />
+    <Compile Remove="Api\RefundsApiTests.cs" />
+    <Compile Remove="Api\SettlementsApiTests.cs" />
+    <Compile Remove="Api\TokensApiTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CanadaPostApi\CanadaPostApi.csproj" />
+  </ItemGroup>
+
+</Project>
