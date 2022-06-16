@@ -33,3 +33,48 @@ using CandaPostApi.Api;
 <a name="status"></a>
 ## Status of Library
 This is the inital build and unit tests have been completed
+
+## Debug Response
+
+- Create Shipment
+
+```
+Shipment ID: 168171655323962886
+self:  https://ct.soa-gw.canadapost.ca/rs/0002004381/0002004381/shipment/168171655323962886
+details:  https://ct.soa-gw.canadapost.ca/rs/0002004381/0002004381/shipment/168171655323962886/details
+group:  https://ct.soa-gw.canadapost.ca/rs/0002004381/0002004381/shipment?groupId=Group1
+price:  https://ct.soa-gw.canadapost.ca/rs/0002004381/0002004381/shipment/168171655323962886/price
+label:  https://ct.soa-gw.canadapost.ca/rs/artifact/6e93d53968881714/10003302915/0
+```
+
+- Get Shipment
+```
+Shipment ID: 168171655323962886
+self:  https://ct.soa-gw.canadapost.ca/rs/0002004381/0002004381/shipment/168171655323962886
+details:  https://ct.soa-gw.canadapost.ca/rs/0002004381/0002004381/shipment/168171655323962886/details
+price:  https://ct.soa-gw.canadapost.ca/rs/0002004381/0002004381/shipment/168171655323962886/price
+group:  https://ct.soa-gw.canadapost.ca/rs/0002004381/0002004381/shipment?groupId=GROUP1
+label:  https://ct.soa-gw.canadapost.ca/rs/artifact/6e93d53968881714/10003302915/0
+HTTP Response Status: 200
+```
+- Get Artifact
+```
+Writing response to M:\Production\GitRepos\CanadaPostApi\CanadaPostApiTest\bin\Debug\net6.0\shipmentArtifact.pdf
+```
+- Get Shipment Details
+```
+Tracking Pin: 123456789012
+Group Id: GROUP1
+Sender Postal Code: H2B1A0
+Destination Postal Code: K1P5Z9
+Service Code: DOM.EP
+Due amount: 23.06
+```
+- Transmit Shipment
+```
+manifest:  https://ct.soa-gw.canadapost.ca/rs/0002004381/0002004381/manifest/446271655324056370
+```
+- Get Manifest
+```
+Writing response to M:\Production\GitRepos\CanadaPostApi\CanadaPostApiTest\bin\Debug\net6.0\manifestArtifact.pdf
+```
